@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "SSButton.h"
 
 FOUNDATION_EXPORT double SSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char SSDKVersionString[];

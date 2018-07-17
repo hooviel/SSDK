@@ -1,8 +1,8 @@
 {
   "name": "SSDK",
-  "version": "0.1.0",
-  "summary": "A short description of SSDK.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.1.1",
+  "summary": "测试pod SSDK.",
+  "description": "测试pod用的，使劲儿折腾",
   "homepage": "https://github.com/hooviel/SSDK",
   "license": {
     "type": "MIT",
@@ -13,10 +13,22 @@
   },
   "source": {
     "git": "https://github.com/hooviel/SSDK.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "SSDK/Classes/**/*"
+  "source_files": "SSDK/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "YYModel": [
+
+    ]
+  }
 }

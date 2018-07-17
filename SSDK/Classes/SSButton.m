@@ -6,11 +6,16 @@
 //
 
 #import "SSButton.h"
+#import <AFNetworking/AFNetworking.h>
+
 
 @implementation SSButton
 
 - (void)say {
     NSLog(@"Hello world~~~~~😄🐶");
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        NSLog(@"%@", @(status));
+    }];
 }
 
 @end

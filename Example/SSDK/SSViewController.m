@@ -7,8 +7,11 @@
 //
 
 #import "SSViewController.h"
+#import <SSDK/SSButton.h>
 
 @interface SSViewController ()
+
+@property (nonatomic, strong) SSButton *button;
 
 @end
 
@@ -18,6 +21,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.button = [SSButton new];
+    [self.button say];
 }
 
 - (void)didReceiveMemoryWarning
