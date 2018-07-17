@@ -1,0 +1,6 @@
+framework module Pods_SSDK_Example {
+  umbrella header "Pods-SSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

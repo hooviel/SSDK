@@ -1,0 +1,22 @@
+{
+  "name": "SSDK",
+  "version": "0.1.0",
+  "summary": "A short description of SSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/hooviel/SSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hooviel": "hooviel@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/hooviel/SSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SSDK/Classes/**/*"
+}

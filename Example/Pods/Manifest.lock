@@ -1,0 +1,16 @@
+PODS:
+  - SSDK (0.1.0)
+
+DEPENDENCIES:
+  - SSDK (from `../`)
+
+EXTERNAL SOURCES:
+  SSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SSDK: 9fc76d3a9a690dde82e4e395a152cf2ef6c79b48
+
+PODFILE CHECKSUM: 7a9a23619ebfbfae7260193dbfdad12c26ee44cc
+
+COCOAPODS: 1.5.3
