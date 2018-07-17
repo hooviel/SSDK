@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		029A76EA92FC25CB57A2338B79C23646 /* SSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7904DD2E23B368933DBCEDB50C9A05E /* SSDK-dummy.m */; };
 		14AB0158E21C600C09D0C33ACCBD578D /* Pods-SSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 986ABC0E028305A3AA21096E7E5A61BE /* Pods-SSDK_Tests-dummy.m */; };
+		63C61F2E20FE02C200261119 /* SSButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C61F2C20FE02C200261119 /* SSButton.h */; };
+		63C61F2F20FE02C200261119 /* SSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C61F2D20FE02C200261119 /* SSButton.m */; };
 		71CCA1700085753D86E41D69EA6B065E /* Pods-SSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9156A2F2A764D98D2B3B9A29E6DBFF02 /* Pods-SSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		761ADBA332EA7FDEA9EE3A6A19AFF6D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		9DE2B01DFFBDC1204BF5E9799F86E441 /* Pods-SSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 472F2CA7C6F3EC0E2B3D1FC16D2BE746 /* Pods-SSDK_Example-dummy.m */; };
 		A9B07BB0C3E6FE363B7C920ABB77FC6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		CA9435224D99BAA5DB0A318D85C382E1 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A683D27B075255F7A47B69967E6DFF /* ReplaceMe.m */; };
 		E0F7E3C6B8A28BE4C06F8F583DE209EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		E1E62BDE612804FDDE395811068F2048 /* Pods-SSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B76143AEB7DB1CD2E03E7A7A128A7688 /* Pods-SSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6E2CEB9D6A61769D41FB5FD2058C2B6 /* SSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B55181687CA819ABBDC4CE07B9DFF9A5 /* SSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,9 +40,8 @@
 /* Begin PBXFileReference section */
 		01744B29D3E6FD2902031328424BEFA6 /* Pods-SSDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSDK_Example-resources.sh"; sourceTree = "<group>"; };
 		16EDE7959DBD2F9552F52B153DDE6885 /* Pods-SSDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSDK_Tests-resources.sh"; sourceTree = "<group>"; };
-		27C9E37A37CC017B7FAEC3C54ECC2A57 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		32F1B0DF46A9806609155CF69C274F44 /* Pods_SSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SSDK_Example.framework; path = "Pods-SSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		46A683D27B075255F7A47B69967E6DFF /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = SSDK/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		27C9E37A37CC017B7FAEC3C54ECC2A57 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		32F1B0DF46A9806609155CF69C274F44 /* Pods_SSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		472F2CA7C6F3EC0E2B3D1FC16D2BE746 /* Pods-SSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSDK_Example-dummy.m"; sourceTree = "<group>"; };
 		4C7EFE3406DD0354230D63A77A160BD1 /* Pods-SSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4F968BAC369227ACD4C10ADAC70F7DE6 /* Pods-SSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		53173F6F589AB982DC321544A1A99477 /* Pods-SSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SSDK_Tests.modulemap"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6215B9A4CEA731E240EB78C2CEB74B93 /* Pods-SSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		63C61F2C20FE02C200261119 /* SSButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SSButton.h; path = SSDK/Classes/SSButton.h; sourceTree = "<group>"; };
+		63C61F2D20FE02C200261119 /* SSButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SSButton.m; path = SSDK/Classes/SSButton.m; sourceTree = "<group>"; };
 		64C453F5EA5957A95369A0E794C2D28A /* SSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSDK.modulemap; sourceTree = "<group>"; };
 		654F344AD1B68C0821F683B459156793 /* Pods-SSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		712864596D9DAD71F8E34C744DA073D6 /* Pods-SSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -56,9 +58,9 @@
 		7441CAEBB30A436F8DA7EC7B28D89FBC /* Pods-SSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		74C76CFE49D77A0279E03E00DCC3AEE1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9156A2F2A764D98D2B3B9A29E6DBFF02 /* Pods-SSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94130E263505360098B82D58E95F2A14 /* Pods-SSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		97641DDDB6324412F90FCA5227678E95 /* SSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97641DDDB6324412F90FCA5227678E95 /* SSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		986ABC0E028305A3AA21096E7E5A61BE /* Pods-SSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		9CA4494D9D5894EC0BFE2BE8654610F4 /* SSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSDK.xcconfig; sourceTree = "<group>"; };
 		B55181687CA819ABBDC4CE07B9DFF9A5 /* SSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSDK-umbrella.h"; sourceTree = "<group>"; };
@@ -66,11 +68,11 @@
 		B85B08672A6829CD7E89DD4346344139 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD9AEA9BBAEC2A361301AB41478ACFAF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C182AE15022A5D05CDFCC7ACC997BFB5 /* Pods-SSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E493B52FC292C28A064BABB3D13C2704 /* SSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SSDK.framework; path = SSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E493B52FC292C28A064BABB3D13C2704 /* SSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7904DD2E23B368933DBCEDB50C9A05E /* SSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSDK-dummy.m"; sourceTree = "<group>"; };
 		EEB124686790D728B149C290AE5FB9BF /* Pods-SSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EF6BD624ED9323649DF1D42B9D07726B /* Pods_SSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SSDK_Tests.framework; path = "Pods-SSDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0E1D5F1E3EA864DD648629C6DAA57DF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EF6BD624ED9323649DF1D42B9D07726B /* Pods_SSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0E1D5F1E3EA864DD648629C6DAA57DF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F68DFE44F30F7185AA2500D846670888 /* SSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSDK-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -210,9 +212,10 @@
 		DDCFCF1394AF000DC367261FA8F63792 /* SSDK */ = {
 			isa = PBXGroup;
 			children = (
-				46A683D27B075255F7A47B69967E6DFF /* ReplaceMe.m */,
 				397E839AAC7D7D33ECBDA832624F7750 /* Pod */,
 				73134CE745C7C29028EA3E245CEABA03 /* Support Files */,
+				63C61F2C20FE02C200261119 /* SSButton.h */,
+				63C61F2D20FE02C200261119 /* SSButton.m */,
 			);
 			name = SSDK;
 			path = ../..;
@@ -242,6 +245,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C61F2E20FE02C200261119 /* SSButton.h in Headers */,
 				E1E62BDE612804FDDE395811068F2048 /* Pods-SSDK_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,7 +355,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA9435224D99BAA5DB0A318D85C382E1 /* ReplaceMe.m in Sources */,
 				029A76EA92FC25CB57A2338B79C23646 /* SSDK-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DE2B01DFFBDC1204BF5E9799F86E441 /* Pods-SSDK_Example-dummy.m in Sources */,
+				63C61F2F20FE02C200261119 /* SSButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
