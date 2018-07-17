@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SSDK_Example' do
+  pod 'SSDK', :path => '../'
+
+  target 'SSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
