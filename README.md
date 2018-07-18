@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SSDK.svg?style=flat)](https://cocoapods.org/pods/SSDK)
 [![License](https://img.shields.io/cocoapods/l/SSDK.svg?style=flat)](https://cocoapods.org/pods/SSDK)
 [![Platform](https://img.shields.io/cocoapods/p/SSDK.svg?style=flat)](https://cocoapods.org/pods/SSDK)
+[![Build Status](https://travis-ci.org/hooviel/SSDK.svg?branch=master)](https://travis-ci.org/hooviel/SSDK)
 
 ## Example
 
